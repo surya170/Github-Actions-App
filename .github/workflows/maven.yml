@@ -30,13 +30,11 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
-    steps:
-      - uses: actions/checkout@v3
-        name: Check out code
 
-      - name: Build & push Docker image
-        uses: mr-smithers-excellent/docker-build-push@v5
-        with:
+
+    - name: Build & push Docker image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
           image: surya2507/springoot-githubactions
           tags: v1, latest
           registry: docker.io
