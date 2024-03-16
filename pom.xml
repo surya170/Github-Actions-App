@@ -49,6 +49,7 @@
                 </configuration>
             </plugin>
         </plugins>
+        <finalName>springoot-githubactions</finalName>
     </build>
 
 </project>
